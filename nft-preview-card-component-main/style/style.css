@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    width: 50%;
+    height: 80%;
+    padding: 1em;
+}
+
+.imgContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+aside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+.price figure {
+    position: relative;
+    top: 3px;
+}
+
+.price p {
+    position: relative;
+    left: -2em;
+    color: hsl(178, 100%, 50%);
+}
+
+.remainingTime {
+    display: flex;
+}
+
+.remainingTime figure {
+    position: relative;
+    top: 3px;
+}
+
+.remainingTime p {
+    position: relative;
+    left: -2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
