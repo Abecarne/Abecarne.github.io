@@ -1,28 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+:root {
+  --color-primary: hsl(215, 51%, 70%);
+  --color-active: hsl(178, 100%, 50%);
+  --color-active-lite: hsla(178, 100%, 50%, 0.4);
+  --color-background: hsl(217, 54%, 11%);
+  --color-card-background: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-heading: hsl(0, 0%, 100%);
+
+  --size-mobile: 375px;
+  --size-desktop: 1440px;
+
+  --font-size-p: 18px;
+
+  --border-radius: 12px;
+
+  --size-nft-card: 320px;
+}
+
 * {
     font-family: 'Outfit', sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 body {
     background-color: hsl(217, 54%, 11%);
-}
-
-.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(216, 50%, 16%);
-    width: 50%;
-    height: 80%;
-    padding: 1em;
 }
 
-.imgContainer {
-    width: 100%;
-    overflow: hidden;
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5em;
+    width: 25%;
+    border-radius: 15px;
+    box-shadow: 0px 20px 15px 15px hsl(217, 51%, 9%);
 }
+
+.imgNFT {
+    width: 100%;
+}
+
+.imgNFT > a > img {
+    border-radius: 10px;
+}
+
+.imgNFT > a > img:hover {
+    overflow: hidden;
+    opacity: 0.3;
+} 
 
 h1 {
     color: hsl(0, 0%, 100%);
@@ -38,45 +71,88 @@ aside {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    border: 1px solid red;
+    justify-content: space-between;
 }
 
 .price {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-.price figure {
+.price img {
     position: relative;
-    top: 3px;
+    left: 5px;
+    top: 2px;
 }
 
 .price p {
-    position: relative;
-    left: -2em;
     color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    margin-left: 10px;
 }
 
 .remainingTime {
     display: flex;
+    align-items: center;
 }
 
-.remainingTime figure {
-    position: relative;
-    top: 3px;
+.remainingTime img {
+    margin-top: 5px;
 }
 
-.remainingTime p {
-    position: relative;
-    left: -2em;
+hr {
+    width: 100%;
+    border: none;
+    overflow: visible;
+    text-align: center;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    opacity: 0.2;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer .imgContainer {
+    width: 10%;
+    color: white;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+
+footer img {
+    overflow: hidden;
+}
+
+footer p {
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:visited {
+    text-decoration: none;
+
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: hsl(215, 51%, 70%);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(178, 100%, 50%);
 }
