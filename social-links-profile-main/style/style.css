@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-off-black: hsl(0, 0%, 8%);
+
+    --paragraph-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-off-black);
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: var(--color-dark-grey);
+    width: 350px;
+    height: 560px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.avatar > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.avatar > h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.avatar > h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--color-green);
+}
+
+.description {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--color-white);
+    padding: 15px;
+    margin-top: -10px;
+}
+
+
+.link-list {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.link-list > a {
+    width: 100%;
+}
+
+.link-list > a > .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey);
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.link-list > a > .link:hover {
+    background-color: var(--color-green);
+    color: var(--color-dark-grey);
+}
