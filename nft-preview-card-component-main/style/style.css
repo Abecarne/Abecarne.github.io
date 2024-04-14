@@ -48,7 +48,8 @@ main {
     flex-direction: column;
     background-color: hsl(216, 50%, 16%);
     padding: 1.5em;
-    width: min(25rem, 85%);
+    width: 360px;
+    height: 660px;
     border-radius: 15px;
     box-shadow: 0px 20px 15px 15px hsl(217, 51%, 9%);
 }
