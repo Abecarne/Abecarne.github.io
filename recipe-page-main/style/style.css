@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: var(--color-wenge-brown);
+    height: 1900px;
 }
 
 .ingredients,
@@ -152,6 +153,11 @@ table tr td {
 
 
 @media screen and (max-width: 768px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+
     .card-container {
         width: 90%;
         padding: 20px;
@@ -166,7 +172,7 @@ table tr td {
     }
 
     .preparation-time {
-        height: 150px;
+        height: 200px;
     }
 
     .preparation-time > h2 {
