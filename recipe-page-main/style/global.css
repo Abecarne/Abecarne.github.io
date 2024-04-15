@@ -1,0 +1,31 @@
+h1, h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--color-nutmeg);
+}
+
+p {
+    font-size: 16px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    padding: 5px;
+}
+
+/* Change the color or the dots from the li elements */
+ul li::marker {
+    color: var(--color-dark-raspberry);
+    font-size: 10px;
+}
+
+ol li::marker {
+    color: var(--color-dark-raspberry);
+    font-weight: 700;
+}
