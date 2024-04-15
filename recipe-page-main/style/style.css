@@ -149,3 +149,48 @@ table tr td {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .recipe-name {
+        height: 300px;
+    }
+
+    .recipe-name h1 {
+        font-size: 30px;
+    }
+
+    .preparation-time {
+        height: 150px;
+    }
+
+    .preparation-time > h2 {
+        font-size: 18px;
+    }
+
+    .ingredients,
+    .instructions {
+        padding: 20px 0;
+    }
+
+    .ingredients h2,
+    .instructions h2,
+    .nutrition h2 {
+        font-size: 18px;
+    }
+
+    table tr th,
+    table tr td {
+        padding: 5px;
+    }
+
+    .attribution {
+        font-size: 10px;
+    }
+    
+}
