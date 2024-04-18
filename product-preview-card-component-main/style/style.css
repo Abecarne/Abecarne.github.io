@@ -58,7 +58,7 @@ body .card-container .infos-container {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
   flex-grow: 1;
 }
 body .card-container .infos-container h2 {
@@ -71,7 +71,7 @@ body .card-container .infos-container h2 {
 body .card-container .infos-container h1 {
   color: var(--color-very-dark-blue);
   font-family: "Fraunces", serif;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 32px;
   margin-top: 10px;
 }
