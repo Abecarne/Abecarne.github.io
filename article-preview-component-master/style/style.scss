@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+    --color-grayish-blue: hsl(212, 23%, 69%);
+    --color-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--color-light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        background-color: white;
+        border-radius: 20px;
+        width: 900px;
+        height: 500px;
+
+        .img-container {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
